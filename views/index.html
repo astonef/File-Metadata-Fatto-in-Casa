@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>File Metadata ~ Fatto in Casa</title>
+      <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h1>File Metadata Microservice ~ 🥐 Fatto in casa</h1>
+
+        <h2>Come si usa?</h2>
+        <p>
+          Basta caricare un file ...
+        </p>
+        <div class="view">
+          <h3 id="output"></h3>
+          <form enctype="multipart/form-data" method="POST" action="/api/analisi-del-tuo-file">
+            <input id="inputfield" type="file" name="upfile">
+            <input id="button" type="submit" value="Carica">
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          <small>Creato con 🍅 da <a href="https://github.com/astonef">Stefano Magni</a></small>
+        </p>
+      </div>
+   </body>
+</html>
