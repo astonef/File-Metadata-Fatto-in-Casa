@@ -1,6 +1,6 @@
 var express = require('express');
 var cors = require('cors');
-var multer = require('multer');
+const multer = require('multer');
 const upload = multer({ dest: 'uploads/'})
 require('dotenv').config()
 
@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.post('/api/analisi-del-tuo-file', upload.single('upfile'), (req, res) => {
+app.post('/api/fileanalyse',upload.single('upfile'), (req, res) => {
 res.json({
 name: req.file.originalname,
 type: req.file.mimetype,
